@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sajani Diwyanjali Hendawitharana — About Me</title>
+  <style>
+    :root{
+      --bg: #f6f8fb;
+      --card: #ffffff;
+      --accent: #2b6cb0;
+      --muted: #6b7280;
+      --radius: 12px;
+      --shadow: 0 6px 20px rgba(15,23,42,0.08);
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef3fb 60%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+    }
+
+    .container{
+      width:100%;
+      max-width:920px;
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:320px 1fr;
+      gap:0;
+    }
+
+    /* Left column */
+    .profile{
+      padding:28px;
+      background:linear-gradient(180deg,#ffffff,#f7fbff);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      gap:18px;
+    }
+
+    .avatar{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      overflow:hidden;
+      border:6px solid rgba(43,108,176,0.08);
+      box-shadow:0 10px 30px rgba(11,52,110,0.06);
+      background:#ddd;
+    }
+
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+
+    h1{
+      margin:0;
+      font-size:20px;
+      line-height:1.1;
+    }
+
+    p.role{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .social{
+      display:flex;
+      gap:8px;
+      margin-top:6px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+      border:1px solid rgba(11,52,110,0.06);
+      background:transparent;
+    }
+
+    /* Right column */
+    .content{
+      padding:36px 32px;
+    }
+
+    .section{
+      margin-bottom:20px;
+    }
+
+    .section h2{
+      margin:0 0 10px 0;
+      font-size:16px;
+      color:var(--accent);
+    }
+
+    .about-text{
+      margin:0;
+      color:#0f172a;
+      line-height:1.6;
+    }
+
+    ul.interests{
+      margin:8px 0 0 0;
+      padding-left:20px;
+    }
+
+    .contact a{
+      display:inline-block;
+      margin-right:12px;
+      text-decoration:none;
+      color:var(--accent);
+      font-weight:600;
+      font-size:14px;
+    }
+
+    footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* Responsive */
+    @media (max-width:820px){
+      .container{grid-template-columns:1fr;}
+      .profile{flex-direction:row;gap:16px;text-align:left;padding:20px}
+      .avatar{width:96px;height:96px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <aside class="profile" aria-labelledby="profile-name">
+      <div class="avatar" aria-hidden="false">
+        <img src="myphoto.jpg" alt="Sajani Diwyanjali Hendawitharana — profile photo" />
+      </div>
+      <div>
+        <h1 id="profile-name">Sajani Diwyanjali Hendawitharana</h1>
+        <p class="role">Traveler • Storyteller • Curious Explorer</p>
+        <div class="social" aria-hidden="false">
+          <a class="btn" href="#about">About</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="section" id="about">
+        <h2>About Me</h2>
+        <p class="about-text">Hi — I’m Sajani. I love slow travel and spontaneous detours: wandering local markets, trying street food, and learning small pieces of the world through conversations with strangers. I plan trips around nature, local culture, and photography opportunities, and I keep a small travel journal for every place I visit. My travels are about curiosity first and checklists second.</p>
+      </div>
+
+      <div class="section">
+        <h2>Travel Interests</h2>
+        <ul class="interests">
+          <li>Nature & Hiking — mountain trails and waterfalls</li>
+          <li>Local Food & Street Markets</li>
+          <li>Heritage Sites & Architectural Walks</li>
+          <li>Wildlife & Birdwatching</li>
+          <li>Travel Photography</li>
+        </ul>
+      </div>
+
+      <div class="section contact" id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out:</p>
+        <p>
+          <a href="mailto:diwyanjali789sajani@gmail.com">diwyanjali789sajani@gmail.com</a>
+          <a href="https://wa.me/94778916329" target="_blank" rel="noopener">WhatsApp: 0778916329</a>
+        </p>
+        <footer>
+          Tip: put <code>myphoto.png</code> in the same folder as this file to show your profile photo.
+        </footer>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
